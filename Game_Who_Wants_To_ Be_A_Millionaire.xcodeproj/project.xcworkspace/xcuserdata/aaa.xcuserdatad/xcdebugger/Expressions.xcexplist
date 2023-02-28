@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "one-time initialization function for shared:Game.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Game.shared.unsafeMutableAddressor:Game.swift">
+      </ContextState>
+      <ContextState
+         contextName = "QuestionsViewController.viewDidLoad():QuestionsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "QuestionsViewController.tableView(_:didSelectRowAt:):QuestionsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " newGame.recordAnswer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static AppDelegate.$main():AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "StartGameViewController.prepare(for:sender:):StartGameViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Game.().init():Game.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
