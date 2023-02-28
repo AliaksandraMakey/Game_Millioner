@@ -83,6 +83,15 @@
 			path = Record;
 			sourceTree = "<group>";
 		};
+		004B466C29ADE57E00C33694 /* Fundamental */ = {
+			isa = PBXGroup;
+			children = (
+				004FFA4C299E8B9F00181A7A /* SceneDelegate.swift */,
+				004FFA4A299E8B9F00181A7A /* AppDelegate.swift */,
+			);
+			path = Fundamental;
+			sourceTree = "<group>";
+		};
 		004FFA3E299E8B9F00181A7A = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +111,7 @@
 		004FFA49299E8B9F00181A7A /* Game_Who_Wants_To_ Be_A_Millionaire */ = {
 			isa = PBXGroup;
 			children = (
-				004FFA4A299E8B9F00181A7A /* AppDelegate.swift */,
-				004FFA4C299E8B9F00181A7A /* SceneDelegate.swift */,
+				004B466C29ADE57E00C33694 /* Fundamental */,
 				00505868299FE16F00503758 /* Helper */,
 				00505869299FE18500503758 /* Model */,
 				007EA6AA29A52C94001DD5DE /* Cell */,
