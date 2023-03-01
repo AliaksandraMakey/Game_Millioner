@@ -9,8 +9,8 @@ final class RecordsCaretaker {
     /// save
     func save(_ records: [Record]) {
         do {
-        let data = try self.encoder.encode(records)
-        UserDefaults.standard.set(data, forKey: key)
+            let data = try self.encoder.encode(records)
+            UserDefaults.standard.set(data, forKey: key)
         } catch {
             print(error) }
     }
@@ -21,5 +21,7 @@ final class RecordsCaretaker {
             return try self.decoder.decode([Record].self, from: data)
         } catch {
             print(error)
-            return [] }
-    } }
+            return []
+        }
+    }
+}

@@ -12,11 +12,9 @@ class RecordTableViewCell: UITableViewCell {
         return UINib(nibName: "RecordTableViewCell", bundle: nil)
     }
     /// configure
-    func configure(record: [Record]) {
-        for test in record {
-            self.dateLabel?.text =  dateFormatter.string(from: test.date )
-            self.recordLabel?.text =  "Отвечено верно \(String(describing: test.score))"
-        }
+    func configure(record: Record) {
+            self.dateLabel?.text =  dateFormatter.string(from: record.date )
+            self.recordLabel?.text =  "Отвечено \(String(describing: record.percentOfAllQuestions))%"
     }
     /// awakeFromNib
     override func awakeFromNib() {

@@ -2,6 +2,7 @@
 
 import UIKit
 
+//MARK: StartGameViewController
 class StartGameViewController: UIViewController {
     //MARK: IBOutlet
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -10,6 +11,9 @@ class StartGameViewController: UIViewController {
     @IBOutlet weak var startGameButton: UIButton!
     @IBOutlet weak var resultsGameButton: UIButton!
     @IBOutlet weak var quickResultLabel: UILabel!
+    
+
+   
     //MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()

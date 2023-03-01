@@ -21,4 +21,10 @@ class Answer {
         self.text = text
         self.correct = correct
     }
+    /// checkAnswer
+    public static func checkAnswer(answer: Answer, question: Question) -> Bool {
+        return question.answers.contains(where: { $0.text == answer.text }) && answer.correct
+    }
 }
+
+
