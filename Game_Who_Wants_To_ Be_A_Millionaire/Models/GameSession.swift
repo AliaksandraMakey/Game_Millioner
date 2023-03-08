@@ -8,13 +8,13 @@ protocol EndGameDelegate: AnyObject {
 //MARK: GameSession
 class GameSession {
     weak var gameDelegate: EndGameDelegate?
-    
+    var addedQuestionsCaretaker = AddedQuestionsCaretaker()
     var currentQuestion: Question?
     var questions: [Question]
     var record: Record?
-    var recordAnswer = [Int]()
+    var recordAnswer = Observable<[Int]>([Int]())
     /// init
     init(questions: [Question]) {
-        self.questions = questions
+        self.questions = gameQuestionsArray + addedQuestionsCaretaker.retrieveQuestions()
     }
 }

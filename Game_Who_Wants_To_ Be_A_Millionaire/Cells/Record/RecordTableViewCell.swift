@@ -14,7 +14,7 @@ class RecordTableViewCell: UITableViewCell {
     /// configure
     func configure(record: Record) {
             self.dateLabel?.text =  dateFormatter.string(from: record.date )
-            self.recordLabel?.text =  "Отвечено \(String(describing: record.percentOfAllQuestions))%"
+        self.recordLabel?.text =  "Отвечено \(String(describing: record.percentOfAllQuestions))%"
     }
     /// awakeFromNib
     override func awakeFromNib() {
