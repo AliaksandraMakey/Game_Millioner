@@ -5,7 +5,7 @@ import Foundation
 /// DateFormatter
  let dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .short
+     dateFormatter.dateFormat = "dd/M/yyyy, H:mm"
     
     return dateFormatter
 }()
