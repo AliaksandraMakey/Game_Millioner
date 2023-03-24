@@ -2,6 +2,7 @@
 
 import UIKit
 
+//MARK: ResultsViewController
 class ResultsViewController: UIViewController {
     //MARK: IBOutlet
     @IBOutlet weak var resultTableView: UITableView!
@@ -24,8 +25,8 @@ extension ResultsViewController: UITableViewDataSource, UITableViewDelegate {
     /// cellForRowAt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RecordTableViewCell.identifier, for: indexPath) as? RecordTableViewCell else { return UITableViewCell() }
-        let records = Game.shared.records
-        cell.configure(record: records)
+        let record = Game.shared.records[indexPath.row]
+        cell.configure(record: record)
         return cell
     }
 }

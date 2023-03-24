@@ -24,24 +24,28 @@ func loadingAnimateKeyFrame(exitAfter: Int, currentCount: Int, backgroundImage: 
     }
 }
 /// loadingAnimateButton
-func loadingAnimateButton(buttonOne: UIImageView?, buttonTwo: UIImageView?) {
-    UIImageView.animateKeyframes(withDuration: 0.2,
+func loadingAnimateButton(buttonOne: UIImageView?, buttonTwo: UIImageView?, buttonThree: UIImageView?, buttonFour: UIImageView?) {
+    UIImageView.animateKeyframes(withDuration: 1,
                                  delay: 3,
                                  options: []) {
         UIImageView.addKeyframe(withRelativeStartTime: 1,
-                                relativeDuration: 0.1)  {
-            buttonOne?.alpha = 0.5
-            buttonTwo?.alpha = 0.5
+                                relativeDuration: 0.5)  {
+            buttonOne?.alpha = 0.1
+            buttonTwo?.alpha = 0.1
+            buttonThree?.alpha = 0.1
+            buttonFour?.alpha = 0.1
         }
     } completion: { _ in
         buttonOne?.alpha = 1
         buttonTwo?.alpha = 1
+        buttonThree?.alpha = 1
+        buttonFour?.alpha = 1
     }
     
 }
 /// loadImageAnimation
-func loadImageAnimation(image: UIImageView?, buttonOne: UIImageView?, buttonTwo: UIImageView?) {
+func loadImageAnimation(image: UIImageView?, buttonOne: UIImageView?, buttonTwo: UIImageView?, buttonThree: UIImageView?, buttonFour: UIImageView?) {
     image?.alpha = 0.2
     loadingAnimateKeyFrame(exitAfter: 3, currentCount: 0, backgroundImage: image)
-    loadingAnimateButton(buttonOne: buttonOne, buttonTwo: buttonTwo)
+    loadingAnimateButton(buttonOne: buttonOne, buttonTwo: buttonTwo, buttonThree: buttonThree, buttonFour: buttonFour)
 }
