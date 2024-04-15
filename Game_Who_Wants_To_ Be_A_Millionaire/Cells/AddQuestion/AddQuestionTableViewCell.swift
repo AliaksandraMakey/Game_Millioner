@@ -45,18 +45,18 @@ class AddQuestionTableViewCell: UITableViewCell {
                                 Answer(text: wrongAnswerOne.text!, correct: false),
                                 Answer(text: wrongAnswerThree.text!, correct: false)].shuffled()
             
-            //            let question: [Question] = [Question(text: questionText.text!,
-            //                                                 answers: answersArray)]
-            //                    addedQuestionsCaretaker.save(question)
+                        let question: [Question] = [Question(text: questionText.text!,
+                                                             answers: answersArray)]
+                                addedQuestionsCaretaker.save(question)
             
             // ВСЕГДА ПОКАЗЫВАЕТ ТОЛЬКО 1 ДОЮАВЛЕННЫЙ ВОПРОС
-            var question: [Question] = [Question(text: questionText.text!,
-                                                 answers: answersArray)]
-            {
-                didSet {
-                    addedQuestionsCaretaker.save(question)
-                }
-            }
+//            var question: [Question] = [Question(text: questionText.text!,
+//                                                 answers: answersArray)]
+//            {
+//                didSet {
+//                    addedQuestionsCaretaker.save(question)
+//                }
+//            }
         }
     }
 }
